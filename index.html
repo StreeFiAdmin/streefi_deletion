@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Deletion Request - Streefi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #444;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="tel"], select, textarea {
+            padding: 8px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+        button {
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Request Account Deletion</h1>
+        <p>If you wish to delete your account and associated data, please fill out the form below. Our team will process your request as soon as possible.</p>
+        
+        <form action="https://yourwebsite.com/delete-account-request" method="POST">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="phone">Phone Number Associated with Your Account</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="confirmation">Confirmation</label>
+            <select id="confirmation" name="confirmation" required>
+                <option value="">Please confirm</option>
+                <option value="confirm">I understand that this action is irreversible</option>
+            </select>
+            
+            <label for="message">Additional Comments (optional)</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+            
+            <button type="submit">Submit Request</button>
+        </form>
+
+        <h2>Data Deletion and Retention</h2>
+        <p>Upon deletion, we will remove all your personal data, including your profile details, transaction history, and preferences. We may retain certain data, such as transaction records, for legal purposes for a specified period.</p>
+        
+        <h2>Need Assistance?</h2>
+        <p>If you have any questions or encounter issues, please contact our support team at <a href="mailto:customerscaremail@gmail.com">customerscaremail@gmail.com</a>.</p>
+    </div>
+</body>
+</html>
